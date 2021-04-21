@@ -1,12 +1,10 @@
-# rosbe-docker
-Dockerized RosBE (ReactOS Build Environment)
-I created this project because I wanted to test the latest news in ReactOS, but I didn't want to set up an environment every time.
-Or if I want to set up rosbe on a remote server quickly, docker is the way.
+# RosBE Docker
+Dockerized RosBE (ReactOS Build Environment) Fully functional ReactOS Build Environment in a box based on Ubuntu 20.04 LTS. The container contains all the necessary tools to compile ReactOS from a source.
 
 #### Instructions
 - clone ReactOS repository ``git clone https://github.com/reactos/reactos.git``
 - start the container ``./start-rosbe.sh``
 - init rosbe environment by ``/usr/RosBE/RosBE.sh``
-- cd into reactos directory
+- cd into a reactos directory
 - run ``./configure.sh`` to prepare build folder ``output-MinGW-i386`` and cd into it
 - run ``ninja bootcd`` or ``ninja livecd``
