@@ -1,6 +1,6 @@
 RosBE Docker
 =================================
-Dockerized RosBE (ReactOS Build Environment) Fully functional ReactOS Build Environment in a box based on Ubuntu 20.04 LTS. The container contains all the necessary tools to compile ReactOS from a source.
+Dockerized RosBE (ReactOS Build Environment) Fully functional ReactOS Build Environment in a box based on Ubuntu 20.04 LTS. The container contains all the necessary tools to compile ReactOS from a source. On any platform that can run docker container.
 
 #### Instructions
 - clone ReactOS repository ``git clone https://github.com/reactos/reactos.git``
