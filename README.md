@@ -4,7 +4,8 @@ Dockerized RosBE (ReactOS Build Environment) Fully functional ReactOS Build Envi
 
 #### Instructions
 - clone ReactOS repository ``git clone https://github.com/reactos/reactos.git``
-- start the container ``./start-rosbe.sh``
+- start the container ``docker run --rm -it --name rosbe -v ${PWD}:/root/workspace nirsiel/rosbe:latest``
+    -   or a prepared start script located in the docker rosbe repository could be used. ``./start-rosbe.sh``
 - init rosbe environment by running ``rosbe`` which is alias to ``/usr/RosBE/RosBE.sh``
 - cd into a reactos directory
 - run ``./configure.sh`` to prepare build folder ``output-MinGW-i386`` and cd into it
