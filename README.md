@@ -7,13 +7,13 @@ Dockerized RosBE (ReactOS Build Environment) Fully functional ReactOS Build Envi
 - start the container ``docker run --rm -it --name rosbe -v ${PWD}:/root/workspace nirsiel/rosbe:latest``
     -   or a prepared start script located in the docker rosbe repository could be used. ``./start-rosbe.sh``
 - init rosbe environment by running ``rosbe`` which is alias to ``/usr/RosBE/RosBE.sh``
-- cd into a reactos directory
+- cd into a reactos directory if you are not there already.
 - run ``./configure.sh`` to prepare build folder ``output-MinGW-i386`` and cd into it
 - run ``ninja bootcd`` or ``ninja livecd``
 
 #### Docker tags
 **latest**
-  - Latest contains the latest stable build of the docker image, tested multiple times.
+  - latest tag is used for production-ready images, which are tested on the latest stable release of ReactOS in such a way that the environment must be able to build the OS and create bootable iso images.
   
 **dev**
-  - Contains latest test build of the docker image, might include not so tested setup or experimental version of tools.
+  - The development build is used for testing changes and new configurations of the image. It usually works just fine, but it shouldn't be depended on for production use.
