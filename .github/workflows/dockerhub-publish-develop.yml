@@ -35,6 +35,8 @@ jobs:
         with:
           push: true
           tags: nirsiel/rosbe:latest
+          cache-from: type=local,src=/tmp/.buildx-cache
+          cache-to: type=local,dest=/tmp/.buildx-cache-new,mode=max
 
       # Temp fix for caching
       - name: Move cache
